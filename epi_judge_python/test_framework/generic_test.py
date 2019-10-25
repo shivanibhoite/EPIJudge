@@ -44,7 +44,7 @@ def generic_test_main(test_file,
     except RuntimeError as e:
         print(
             '\nCritical error({}): {}'.format(e.__class__.__name__, e),
-            file=(sys.stderr)
+            file=sys.stderr)
         return TestResult.RUNTIME_ERROR
 
 
